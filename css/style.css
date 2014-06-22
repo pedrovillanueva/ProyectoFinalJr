@@ -1,0 +1,254 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-yu1h8d');
+	src:url('fonts/icomoon.eot?#iefix-yu1h8d') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-yu1h8d') format('woff'),
+		url('fonts/icomoon.ttf?-yu1h8d') format('truetype'),
+		url('fonts/icomoon.svg?-yu1h8d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE608:before {
+	content: "\e608";
+	font-size: 70px;
+}
+.icon-uniE607:before {
+	content: "\e607";
+	font-size: 70px
+}
+.icon-phone:before {
+	content: "\e600";
+}
+.icon-calendar:before {
+	content: "\e601";
+	font-size: 70px;
+}
+.icon-thumbs-up:before {
+	content: "\e602";
+}
+.icon-facebook:before {
+	content: "\e603";
+	color: #3b5998;
+	font-size: 25px;
+}
+.icon-twitter:before {
+	content: "\e604";
+	color: #55acee;
+	font-size: 25px;
+}
+.icon-youtube:before {
+	content: "\e605";
+	color: #e62c22;
+	font-size: 25px;
+}
+.icon-house:before {
+	content: "\e606";
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	background: #0072C6;/*color de fondo (otro color=#4495CA)*/
+	color: #ffffff;/*color de letra*/
+	padding: 20px;
+	/*position: fixed;*/
+	/*width: 97%;*/
+}
+header h1{
+	margin: 0;
+	font-size: 35px;
+	font-weight: normal;
+	text-align: center;
+}
+header h1 img{
+	width: 120px;
+}
+nav{
+	background: #0072C6;
+	/*position: fixed;*/
+}
+nav ul{
+	margin: 0;
+}
+nav ul li{
+	display: inline-block;
+	padding: 5px 60px;
+	border-right: solid 1px white;
+	/*border-top: solid 1px white;*/
+	transition: all 1s ease;
+}
+nav ul li:hover{
+	background: white;
+	color: #0072C6;
+}
+nav ul a{
+	color: white;
+	text-decoration: none;
+}
+
+#contenedor{
+	background: #F7F7F7;
+	width: 100%;
+	margin: 0 auto;
+}
+#imagen{
+	display: block;
+	background: white;
+	/*border-bottom: solid 2px white;*/
+}
+/*#imagen article{
+	/*position: absolute;
+
+}*/
+#imagen div{
+	padding-left: 15%
+}
+
+#alumnos{
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+	padding: 15px;
+}
+#novedades{
+	display: inline-block;
+	width: 65%;
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	overflow: hidden;
+	background: white;
+}
+#enlaces{
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+.botonE a{
+	color: #0071C6;
+	text-decoration: none;
+	padding-left: 60px;
+}
+.redes a{
+	padding-right: 20px;
+	text-decoration: none;
+	margin-left: 15px;
+}
+.botones{
+	color: #ffffff;
+	background: #0072C6;
+	border:solid 1px white;
+	border-radius: 3px;
+	transition: all 1s ease;
+}
+#alumnos a{
+	text-decoration: none;
+}
+.botones:hover{
+	background: white;
+	color: #0072C6;
+	/*border:solid 1px #4495CA;*/
+}
+#novedades article{
+	background: #F2F3F4;
+	margin: 15px;
+	border-radius: 15px;
+	trasition: all 1s ease;	
+}
+#novedades article:hover{
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#novedades article .notas img{
+	display: block;
+	width: 100%;
+	
+}
+#novedades article .notas p{
+	display: block;
+	width: 100%;
+	text-align: justify;
+
+}
+.notas{
+	padding:20px;
+}
+#novedades article h3{
+	text-transform: uppercase;
+	padding-left: 5px;	
+}
+footer{
+	background: rgb(190, 190, 190);
+}
+footer span{
+	display: block;
+	text-align: center;
+	color: rgb(60, 60, 60);
+}
+/*desktop*/
+@media screen and (min-width: 1024px) {
+	
+}
+/*tablet*/
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	nav ul li{
+		padding: 3px 25px;
+	}
+	#imagen div{
+		padding: 0;
+	}
+	#alumnos{
+		width: 15%;
+	}
+	#novedades{
+		width: 60%;
+	}
+	#enlaces{
+		width: 15%;
+	}
+}
+/*movil*/
+@media screen and (max-width: 767px){
+	header h1{
+		font-size: 20px;
+	}
+	header h1 img{
+		width: 60px;
+	}
+	#alumnos{
+		display: block;
+		width: 100%
+	}
+	#novedades{
+		display: block;
+		width: 100%
+	}
+	#enlaces{
+		display: block;
+		width: 100%
+	}
+	#alumnos article{
+		padding-right: 100px
+	}
+	.notas{
+		padding: 5px;
+	}
+}
