@@ -60,6 +60,13 @@
 	content: "\e606";
 }
 
+.menuflotante{
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
 *{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -103,6 +110,7 @@ nav ul a{
 }
 
 #contenedor{
+	margin-top: 183px;
 	background: #F7F7F7;
 	width: 100%;
 	margin: 0 auto;
@@ -117,7 +125,11 @@ nav ul a{
 
 }*/
 #imagen div{
-	padding-left: 15%
+	/*padding-left: 15%*/
+}
+
+#imagen div img{
+	width:100%;
 }
 
 #alumnos{
